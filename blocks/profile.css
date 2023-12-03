@@ -9,7 +9,7 @@
   grid-template-areas:
     "title button"
     "description description";
-  grid-template-columns: minmax(auto, 373px) auto;
+  grid-template-columns: minmax(auto, 375px) auto;
   align-items: center;
 }
 
@@ -17,6 +17,7 @@
   background: transparent url(../images/Edit\ Button.svg) center no-repeat;
   height: 24px;
   width: 24px;
+  margin-left: 20px;
 }
 
 .profile__add-button {
@@ -24,6 +25,7 @@
   width: 150px;
   height: 50px;
   margin-left: auto;
+  border: 2px solid #ffffff;
 }
 
 .profile__title {
@@ -32,6 +34,9 @@
   font-weight: 500;
   grid-area: title;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__description {
@@ -54,25 +59,78 @@
   margin-right: 24px;
 }
 
-@media screen and (max-width: 480px) {
-  .profile {
-    flex-direction: column;
+@media screen and (max-width: 775px) {
+  .profile__image {
+    margin-right: 15px;
   }
 
   .profile__info {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profile__title {
+    font-size: 36px;
+    max-width: 300px;
   }
 
   .profile__description {
     width: 100%;
-    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 300px;
+  }
+
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
   }
 
   .profile__add-button {
     margin: 0;
-    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .profile {
+    padding-top: 42px;
+    flex-direction: column;
+  }
+
+  .profile__image {
+    margin: 0;
+  }
+
+  .profile__info {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .profile__title {
+    max-width: 196px;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .profile__description {
+    margin: 14px 0 36px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile__add-button {
+    width: 282px;
+  }
+
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
   }
 }

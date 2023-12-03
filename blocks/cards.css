@@ -9,6 +9,7 @@
   grid-gap: 20px 17px;
   padding: 0;
   margin: 0;
+  padding-top: 30px;
 }
 
 .card {
@@ -36,12 +37,9 @@
   justify-content: space-between;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
-.cards__title {
+.card__title {
   margin: 0;
   max-width: 219px;
   text-overflow: ellipsis;
@@ -54,4 +52,14 @@
   width: 21px;
   height: 18px;
   border-style: none;
+}
+
+@media screen and (max-width: 620px) {
+  .cards {
+    margin-top: 0px;
+  }
+
+  .cards__list {
+    padding-top: 30px;
+  }
 }
