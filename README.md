@@ -20,3 +20,5 @@ This project is made using responsive design, so all the elements are displayed 
 This project is made using VS Code to create and style the layout of the webpage. In addition to the use of developer tools to verify the sizing and margins/padding of the design.
 
 **Git Hub Link**
+
+https://tcchin888.github.io/se_project_aroundtheus/
