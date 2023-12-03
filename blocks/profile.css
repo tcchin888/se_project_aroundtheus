@@ -18,6 +18,12 @@
   height: 24px;
   width: 24px;
   margin-left: 20px;
+  cursor: pointer;
+  transition: opacity ease-in-out;
+}
+
+.profile__edit-button:hover {
+  opacity: 60%;
 }
 
 .profile__add-button {
@@ -26,6 +32,12 @@
   height: 50px;
   margin-left: auto;
   border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: opacity ease-in-out;
+}
+
+.profile__add-button:hover {
+  opacity: 60%;
 }
 
 .profile__title {
