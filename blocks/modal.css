@@ -7,7 +7,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: none;
-  padding: 0 19px;
 }
 
 .modal_opened {
@@ -87,6 +86,7 @@
   .modal__container {
     padding: 25px 22px;
     gap: 30px;
+    max-width: 282px;
   }
 
   .modal__heading {
@@ -115,5 +115,9 @@
     line-height: 17px;
     height: 46px;
     margin-top: 15px;
+  }
+
+  .modal__input {
+    width: 238px;
   }
 }
